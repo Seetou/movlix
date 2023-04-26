@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobalContext } from "./Context";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
+import styled from "styled-components";
 
 const TrendingMovies = () => {
   const { popularMovies, loading, defaultImage } = useGlobalContext();
@@ -43,3 +44,5 @@ const TrendingMovies = () => {
 };
 
 export default TrendingMovies;
+
+const TrendingWrapper = styled.section``;
